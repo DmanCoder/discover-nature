@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './styles/main.scss';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function App() {
+  useEffect(() => {}, []);
+  
   return (
     <div className="App">
+      <div className="bg-overlay">
+        <span>Discover</span>
+      </div>
       <nav className="top-navigation">
         <ul>
           <li>DISCOVER</li>
