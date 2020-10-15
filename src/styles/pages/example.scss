@@ -1,1 +1,91 @@
 // TEST EXAMPLE PAGE
+
+.top-navigation {
+  padding: 1.3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 1.3rem;
+  @include mediaQ('>=desktop') {
+    font-size: 1.6rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    margin-top: 1rem;
+  }
+
+  ul {
+    @include immaFlex($just: space-between, $align: center);
+  }
+
+  ul li {
+    color: #fff;
+    &:nth-child(1) {
+      font-weight: bold;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+.banner {
+  height: 100vh;
+  padding: 1.3rem;
+  background: url('https://images.pexels.com/photos/701016/pexels-photo-701016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+    no-repeat center / cover;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+
+  @include immaFlex($align: center, $dir: column, $just: center);
+  @include mediaQ('>=desktop') {
+    width: 100%;
+    text-align: left;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    // @include immaFlex($align: flex-start, $dir: column);
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    @include mediaQ('>=desktop') {
+      font-size: 9.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__find-more {
+    font-weight: bold;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    @include mediaQ('>=desktop') {
+      margin-bottom: 8.5rem;
+    }
+
+    &::after {
+      content: '';
+      background-color: yellowgreen;
+      width: 100%;
+      height: 0.2rem;
+      display: block;
+    }
+  }
+
+  &__msg {
+    display: none;
+    @include mediaQ('>=tablet') {
+      margin-top: 2rem;
+      line-height: 1.8;
+      display: block;
+      max-width: 50rem;
+      font-size: 1.6rem;
+    }
+  }
+}

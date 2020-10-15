@@ -4,7 +4,7 @@ import './styles/main.scss';
 function App() {
   return (
     <div className="App">
-      <nav>
+      <nav className="top-navigation">
         <ul>
           <li>DISCOVER</li>
           <li>About</li>
@@ -12,6 +12,9 @@ function App() {
           <li>Learn</li>
           <li>Growth</li>
           <li>Contact</li>
+          <li>
+            <span className="material-icons">menu</span>
+          </li>
         </ul>
       </nav>
 
@@ -22,13 +25,12 @@ function App() {
           </h1>
         </header>
 
-        <p>find out more</p>
+        <span className="banner__find-more">Find out more</span>
 
-        <p>
+        <p className="banner__msg">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
           recusandae quos. Modi perferendis eum, suscipit reiciendis ratione
-          mollitia facilis consectetur beatae. Nulla molestias officiis ipsam
-          deserunt veritatis ab dolor ipsa!
+          mollitia facilis consectetur beatae.
         </p>
       </div>
     </div>
