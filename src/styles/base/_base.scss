@@ -1,0 +1,106 @@
+// /* ============================================
+//                   BASE STYLES
+//    ============================================ */
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: inherit;
+// }
+
+// html {
+//   font-size: 62.5%; // DEFINES WHAT 1 REM IS E.G. 1REM === 10PX
+// }
+
+// body {
+//   background-color: var(--color__grey-light);
+//   color: var(--color__grey-dark);
+//   letter-spacing: 0.05rem;
+//   @extend %lato;
+// }
+
+// /* ============================================
+//             INPUT BASE STYLES
+//    ============================================ */
+// input {
+//   text-indent: 1rem;
+//   border: none;
+//   border-radius: 1rem;
+//   font-size: 1.4rem;
+//   box-shadow: $inner-shadow;
+//   outline: none;
+//   display: block;
+
+//   background: none;
+//   width: 100%;
+//   height: 4.5rem;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   transition: box-shadow 0.3s ease-in-out;
+
+//   &::placeholder {
+//     color: var(--color__grey-light--v3);
+//   }
+
+//   &:focus {
+//     box-shadow: $shadow;
+//   }
+// }
+
+// /* ============================================
+//                   LISTS
+//    ============================================ */
+// ul,
+// ol {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+/* ============================================
+                  BASE STYLES
+   ============================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // DEFINES WHAT 1 REM IS E.G. 1REM === 10PX
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.05rem;
+}
+
+/* ============================================
+                     HEADERS
+      ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+/* ============================================
+                     LISTS
+      ============================================ */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+}
